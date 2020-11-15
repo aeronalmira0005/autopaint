@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Juan's Auto Paint</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="js/functions.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+
+    <div class="header">
+        <p>JUAN'S AUTO PAINT</p>
+    </div>
+
+    <div class="container-nav">
+        <ul class="nav">
+          <li>
+            <a href="#" class="active-page">NEW PAINT JOB</a>
+          </li>
+          <li>
+            <a href="#">PAINT JOBS</a>
+          </li>
+        </ul>
+    </div>
+
+    <div class="container-car">
+        <p>New Paint Job</p>
+
+        <div class="cars">
+            <img class="left-car">
+            <img src="images/arrow.png" class="arrow-img">
+            <img class="right-car">
+        </div>
+    </div>
+
+    <div class="container-form">
+      <p>Car Details</p>
+
+      <div class="inner-container-form">
+
+        <form class="form" action="index.html" method="post">
+          Plate No.
+          <input type="text" pattern="[A-Z]{3} [0-9]{3}" class="form-input plate"> <br><br>
+          Current Color
+          <select id="leftCarColor" name="leftCarColor" class="form-input">
+            <option hidden disabled selected value></option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+          </select>
+          <br><br>
+
+          Target Color
+          <select id="rightCarColor" name="rightCarColor" class="form-input">
+            <option hidden disabled selected value> </option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+          </select>
+
+          <br><br>
+
+          <input type="submit" value="Submit" class="submit-btn">
+        </form>
+
+      </div>
+
+
+
+    </div>
+
+
+  </body>
+</html>
